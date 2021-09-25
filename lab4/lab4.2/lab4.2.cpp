@@ -8,4 +8,5 @@ int main() {
 	double L, pi = 3.14;
 	L = pi * d;
 	cout <<"Длина круга равна: " << L;
+	return 0;
 }
