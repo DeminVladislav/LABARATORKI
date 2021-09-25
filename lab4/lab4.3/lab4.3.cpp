@@ -2,11 +2,10 @@
 int main() {
 	setlocale(LC_ALL, "rus");
 	using namespace std;
-	int d;
-	cout « "Введите диагональ" « endl;
-	cin » d;
-	double L, pi = 3.14;
-	L = pi * d;
-	cout «"Длина круга равна: " « L;
+	double a, b;
+	cout << "Введите числа a и b:" << endl;
+	cin >> a >> b;
+	double c = (a + b) / 2;
+	cout << "Среднее арифмитическое a и b: " << c;
 	return 0;
 }
