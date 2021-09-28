@@ -1,0 +1,7 @@
+﻿  lab6.cpp
+C:\Users\79021\OneDrive\Документы\GitHub\LABARATORKI\lab6\lab6.cpp(60,36): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\79021\OneDrive\Документы\GitHub\LABARATORKI\lab6\lab6.cpp(72,48): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\79021\OneDrive\Документы\GitHub\LABARATORKI\lab6\lab6.cpp(84,10): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\79021\OneDrive\Документы\GitHub\LABARATORKI\lab6\lab6.cpp(97,10): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\79021\OneDrive\Документы\GitHub\LABARATORKI\lab6\lab6.cpp(98,10): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  lab6.vcxproj -> C:\Users\79021\OneDrive\Документы\GitHub\LABARATORKI\lab6\Debug\lab6.exe
