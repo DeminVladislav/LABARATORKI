@@ -54,6 +54,7 @@ int task3(int s) {
 int task4(int s) {
 	setlocale(LC_CTYPE, "rus");
 	cout << "Задача №4" << endl;
+	cout << "Уравнение y = 3x^6 - 6x^2 - 7";
 	int x, y;
 	cout << "Введите значение x: ";
 	cin >> x;
