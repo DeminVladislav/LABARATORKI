@@ -3,7 +3,7 @@ int main() {
 	setlocale(LC_ALL, "rus");
 	using namespace std;
 	int d;
-	cout << "Введите диагональ:" << endl;
+	cout << "Введите диаметр:" << endl;
 	cin >> d;
 	double L, pi = 3.14;
 	L = pi * d;
