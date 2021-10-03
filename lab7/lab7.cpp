@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -9,7 +9,7 @@ int task1(int s) {
 	cout << "Угол альфа (0 < alfa < 360) в градусах = ";
 	cin >> alf;
 	alf = (alf * 3.14) / 180;
-	cout << "Значение угла альфа в радианах = " << alf;
+	cout << "Значение угла альфа в радианах = " << alf << endl;
 	return 0;
 }
 
@@ -21,7 +21,7 @@ int task2(int s) {
 	cout << "Угол альфа (0 < alfa < 2 * pi) в радианах = ";
 	cin >> alf;
 	alf = (alf * 180) / 3.14;
-	cout << "Значение угла альфа в градусах = " << alf;
+	cout << "Значение угла альфа в градусах = " << alf << endl;
 	return 0;
 }
 
@@ -40,7 +40,7 @@ int task3(int s) {
 	cout << "Введите Y кг: ";
 	cin >> y;
 	ruby = y * rub;
-	cout << "Цена за Y кг = " << ruby;
+	cout << "Цена за Y кг = " << ruby << endl;
 	return 0;
 }
 
@@ -58,7 +58,7 @@ int task4(int s) {
 	cout << "Время = ";
 	cin >> t;
 	r2 = r + (v1 * t) + (v2 * t);
-	cout << "Расстояние между автомобилями через заданное время = " << r2;
+	cout << "Расстояние между автомобилями через заданное время = " << r2 << endl;
 	return 0;
 }
 
@@ -73,7 +73,7 @@ int task5(int s) {
 	cout << "Введите коэфицент B : ";
 	cin >> b;
 	x = (-b) / a;
-	cout << "Корень уравнения x = " << x;
+	cout << "Корень уравнения x = " << x << endl;
 	return 0;
 }
 
@@ -82,7 +82,7 @@ int task6(int s) {
 	setlocale(LC_CTYPE, "rus");
 	cout << "Задача №6" << endl;
 	cout << "Система уравнений \nA1·x + B1·y = C1 \nA2·x + B2·y = C2 " << endl;
-	double a1, b1, x, y, c1 ,c2, a2 ,b2, delta, delta1, delta2;
+	double a1, b1, x, y, c1, c2, a2, b2, delta, delta1, delta2;
 	cout << "Введите коэфицент A1: ";
 	cin >> a1;
 	cout << "Введите коэфицент B1 : ";
@@ -101,7 +101,7 @@ int task6(int s) {
 	delta2 = a1 * c2 - a2 * c1;
 	x = delta1 / delta;
 	y = delta2 / delta;
-	cout << "Решением системы уравнений являются x = " << x << " y = " << y;
+	cout << "Решением системы уравнений являются x = " << x << " y = " << y << endl;
 	return 0;
 }
 
@@ -111,6 +111,7 @@ int main() {
 	int n;
 	T1:
 	cout << "Выберете задачу (1-6):" << endl;
+	cout << "Для выхода из программы введите '0'" << endl;
 	cin >> n;
 	if (n == 1) {
 		task1(1);
@@ -130,8 +131,11 @@ int main() {
 	else if (n == 6) {
 		task6(1);
 	}
-	else {
+	else if (n != 0) {
 		cout << "Такой задачи нет\n";
-		goto T1;
 	}
+	else if (n == 0) {
+		return 0;
+	}
+	goto T1;
 }
