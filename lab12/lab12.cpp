@@ -116,7 +116,7 @@ int main() {
 	setlocale(LC_ALL, "");
 	int n;
 	T1:
-	cout << "Выберете задачу (1-6):" << endl;
+	cout << "Выберете задачу (1-5):" << endl;
 	cout << "Для выхода из программы введите '0'" << endl;
 	cin >> n;
 	if (n == 1) {
